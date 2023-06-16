@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Password is valid, proceed with authentication logic
         if (authenticateUser($username, $password)) {
             // User is authenticated, redirect to the next page
-            header('Location: nextpage.php');
+            header('Location: control.html');
             exit();
         } else {
             // Invalid credentials, display an error message
