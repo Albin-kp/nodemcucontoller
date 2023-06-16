@@ -5,7 +5,9 @@ function validateForm() {
     // Check if the username and password match the fixed values
     if (username === "albin" && password === "7736950362") {
         // Username and password match, allow form submission
+        window.location.href="control.html"
         return true;
+        
     } else {
         // Invalid username or password, display an error message
         alert("Invalid username or password.");
